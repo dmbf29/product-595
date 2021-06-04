@@ -7,4 +7,8 @@ class User < ApplicationRecord
   def full_name
     "#{first_name.capitalize} #{last_name.capitalize}"
   end
+
+  def upcase_name
+    first_name.upcase
+  end
 end
